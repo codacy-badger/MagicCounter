@@ -1,0 +1,10 @@
+language: node_js
+sudo: false # faster builds
+node_js:
+  - "10.15"
+install:
+  - npm install -g @angular/cli
+  - npm install -g ionic
+  - npm install
+script:
+  - ionic build --prod
